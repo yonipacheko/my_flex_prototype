@@ -7,6 +7,7 @@ if defined?(Bundler)
   Bundler.require(*Rails.groups(:assets => %w(development test)))
   # If you want your assets lazily compiled in production, use this line
   # Bundler.require(:default, :assets, Rails.env)
+  Bundler.require(:default, Rails.env)
 end
 
 module Myflix
@@ -15,8 +16,8 @@ module Myflix
     config.filter_parameters += [:password]
     config.active_support.escape_html_entities_in_json = true
 
-    config.active_record.whitelist_attributes = false
-    config.assets.enabled = true
+    #config.active_record.whitelist_attributes = false
+    config.assets.enabled = false
     config.assets.version = '1.0'
     config.generators do |g|
       g.orm :active_record

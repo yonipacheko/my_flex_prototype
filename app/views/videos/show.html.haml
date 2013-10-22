@@ -1,0 +1,54 @@
+:css
+  .wrapper{
+    width: 950px;
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid;
+  }
+  .wrapper .video{
+
+    float: left;
+    margin-right: 20px;
+
+  }
+
+  .wrapper .description{
+    margin-top: 30px;
+  }
+
+  .wrapper .actions{
+
+    overflow: hidden;
+
+  }
+
+  .wrapper .actions li{
+
+    float: left;
+    margin-top: 20px;
+
+  }
+
+  .wrapper .actions li:first-child{
+
+
+    margin-right: 10px;
+
+
+  }
+
+
+.wrapper
+  .video-container
+    .video
+      %img(src="#{@video.large_url}")
+
+    .description
+      %h3.lead= @video.title
+      %p= @video.description
+      %ul.actions
+        %li
+          %a.btn.btn-primary(href="") Watch Now
+        %li
+          %a.btn(href="") + My Queue
+

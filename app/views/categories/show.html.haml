@@ -1,0 +1,31 @@
+:css
+  h1{
+    font-size: 1.7em;
+    padding-bottom: 30px;
+    -webkit-box-shadow: 0 8px 6px -6px grey;
+    	   -moz-box-shadow: 0 8px 6px -6px grey;
+    	        box-shadow: 0 8px 6px -6px grey;
+  }
+  .category-wrapper{
+    margin-left: 10px;
+  }
+
+  .category-wrapper ul.items-shell{
+    overflow: hidden;
+    margin-top: 20px;
+
+  }
+
+  .category-wrapper .items-shell li {
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+  }
+
+
+.category-wrapper
+  %h1= @category.name
+  %ul.items-shell
+    - @category.videos.each do |v|
+      %li
+        %img(src="#{v.thumb_url}")

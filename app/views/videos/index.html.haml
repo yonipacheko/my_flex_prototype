@@ -1,0 +1,37 @@
+:css
+  h1{
+    font-size: 1.7em;
+  }
+  .category-wrapper{
+    margin-left: 10px;
+  }
+
+  .category-wrapper ul.items-shell{
+    overflow: hidden;
+
+  }
+
+  .category-wrapper .items-shell li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+  }
+
+
+.category-wrapper
+  - @categories.each do |c|
+    = link_to category_path(c) do
+      %h1.category-title=c.name
+    %h3.lead Some videos here:
+    %ul.items-shell
+      - c.videos.each do |v|
+        %li
+          = link_to video_path(v) do
+            %img(src="#{v.thumb_url}")
+
+
+
+
+
+
+
