@@ -1,0 +1,3 @@
+= form_tag search_videos_path, method: 'get' do
+  = text_field_tag :title, params[:title], placeholder: "My Search for videos here", class: 'search-query'
+  = submit_tag :search, name: nil, class: 'btn'
