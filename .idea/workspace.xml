@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75b13246-48a4-4a09-8fb1-f6a3c25604ea" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/Fabricators/category_fabicrator.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/models/category_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/Fabricators/video_fabricator.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/videos/index.html.haml" afterPath="$PROJECT_DIR$/app/views/videos/index.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/video.rb" afterPath="$PROJECT_DIR$/app/models/video.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/video_spec.rb" afterPath="$PROJECT_DIR$/spec/models/video_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -14,7 +10,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383162360502" ignored="false" />
     <file path="/20131003025546_videos.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1380769951969" ignored="false" />
-    <file path="/video.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383196721662" ignored="false" />
+    <file path="/video.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383213439590" ignored="false" />
     <file path="/seeds.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383162857969" ignored="false" />
     <file path="/videos_controller.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1380950716925" ignored="false" />
     <file path="/routes.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1380878585503" ignored="false" />
@@ -39,7 +35,7 @@
     <file path="/application.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1382466421113" ignored="false" />
     <file path="/production.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1382382466409" ignored="false" />
     <file path="/secret_token.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1382383165806" ignored="false" />
-    <file path="/video_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383196074104" ignored="false" />
+    <file path="/video_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383213409414" ignored="false" />
     <file path="/video_fabricator.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383193626701" ignored="false" />
     <file path="/category_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383194247944" ignored="false" />
     <file path="/category_fabicrator.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383193309991" ignored="false" />
@@ -145,10 +141,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="video.rb" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="video.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/models/video.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="38" selection-start="184" selection-end="184" vertical-scroll-proportion="0.19318181">
+                <state line="15" column="2" selection-start="369" selection-end="369" vertical-scroll-proportion="0.57954544">
                   <folding />
                 </state>
               </provider>
@@ -167,10 +163,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="video_spec.rb" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="video_spec.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/spec/models/video_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="2" selection-start="486" selection-end="486" vertical-scroll-proportion="0.6640625">
+                <state line="46" column="36" selection-start="1581" selection-end="1581" vertical-scroll-proportion="0.71543086">
                   <folding />
                 </state>
               </provider>
@@ -214,8 +210,8 @@
         <option value="$PROJECT_DIR$/spec/Fabricators/video_fabricator.rb" />
         <option value="$PROJECT_DIR$/spec/models/category_spec.rb" />
         <option value="$PROJECT_DIR$/app/views/videos/index.html.haml" />
-        <option value="$PROJECT_DIR$/spec/models/video_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/video.rb" />
+        <option value="$PROJECT_DIR$/spec/models/video_spec.rb" />
       </list>
     </option>
   </component>
@@ -872,7 +868,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/Fabricators/category_fabicrator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0">
+        <state line="2" column="11" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -912,16 +908,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/video_spec.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/video.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="2" selection-start="486" selection-end="486" vertical-scroll-proportion="0.6640625">
+        <state line="15" column="2" selection-start="369" selection-end="369" vertical-scroll-proportion="0.57954544">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/video.rb">
+    <entry file="file://$PROJECT_DIR$/spec/models/video_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="38" selection-start="184" selection-end="184" vertical-scroll-proportion="0.19318181">
+        <state line="46" column="36" selection-start="1581" selection-end="1581" vertical-scroll-proportion="0.71543086">
           <folding />
         </state>
       </provider>
