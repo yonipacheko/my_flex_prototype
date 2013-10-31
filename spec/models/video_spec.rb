@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Video do
   it 'saves itself' do
-    video = Fabricate(:video)
+    video = Fabricate(:videos)
     expect(Video.first) =~ (video)
 
   end
@@ -23,14 +23,14 @@ describe Video do
 
   describe 'Search_by_title' do
     it " returns an empty array if there's no match " do
-      v1 = Fabricate(:video)
-      v2 = Fabricate(:video)
+      v1 = Fabricate(:videos)
+      v2 = Fabricate(:videos)
       expect(Video.search_by_title('hola')).to eq([])
     end
 
     it "return an array of one video for an exact match" do
-      v1 = Fabricate(:video)
-      v2 = Fabricate(:video)
+      v1 = Fabricate(:videos)
+      v2 = Fabricate(:videos)
       expect(Video.search_by_title("#{v1.title}")).to eq([v1])
     end
     it 'return an array of video for a partial match' do
