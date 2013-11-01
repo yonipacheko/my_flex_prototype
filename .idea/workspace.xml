@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75b13246-48a4-4a09-8fb1-f6a3c25604ea" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/Fabricators/category_fabicrator.rb" afterPath="$PROJECT_DIR$/spec/Fabricators/category_fabricator.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/category.rb" afterPath="$PROJECT_DIR$/app/models/category.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/category_spec.rb" afterPath="$PROJECT_DIR$/spec/models/category_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/video_spec.rb" afterPath="$PROJECT_DIR$/spec/models/video_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/categories/show.html.haml" afterPath="$PROJECT_DIR$/app/views/categories/show.html.haml" />
     </list>
     <ignored path="myApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -18,7 +15,7 @@
     <file path="/routes.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383215802269" ignored="false" />
     <file path="/index.html.haml" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383195547665" ignored="false" />
     <file path="$PROJECT_DIR$/../../../second_course_1/projects/myapp/config/routes.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1380791423218" ignored="false" />
-    <file path="/show.html.haml" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1381119425214" ignored="false" />
+    <file path="/show.html.haml" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383278529460" ignored="false" />
     <file path="/20131004085209_create_categories_table.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1380878292336" ignored="false" />
     <file path="/category.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383251868092" ignored="false" />
     <file path="/categories_controller.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1381117743252" ignored="false" />
@@ -39,7 +36,7 @@
     <file path="/secret_token.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1382383165806" ignored="false" />
     <file path="/video_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383225112411" ignored="false" />
     <file path="/video_fabricator.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383224879475" ignored="false" />
-    <file path="/category_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383251986796" ignored="false" />
+    <file path="/category_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383252417802" ignored="false" />
     <file path="/category_fabicrator.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383193309991" ignored="false" />
     <file path="/_header.html.haml" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383216309842" ignored="false" />
     <file path="/search.html.haml" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383216408604" ignored="false" />
@@ -101,10 +98,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="category_spec.rb" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="category_spec.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/spec/models/category_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="0" selection-start="59" selection-end="59" vertical-scroll-proportion="0.2647975">
+                <state line="12" column="109" selection-start="324" selection-end="324" vertical-scroll-proportion="0.635514">
                   <folding />
                 </state>
               </provider>
@@ -159,10 +156,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="category.rb" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="category.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/models/category.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="19" selection-start="183" selection-end="183" vertical-scroll-proportion="0.26984128">
+                <state line="6" column="37" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="show.html.haml" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.haml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="30" column="49" selection-start="586" selection-end="586" vertical-scroll-proportion="0.64705884">
                   <folding />
                 </state>
               </provider>
@@ -237,7 +243,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/spec/Factory_classes/video_fabricator.rb" />
         <option value="$PROJECT_DIR$/spec/Fabricators/category_fabicrator.rb" />
@@ -253,6 +258,7 @@
         <option value="$PROJECT_DIR$/app/models/video.rb" />
         <option value="$PROJECT_DIR$/app/models/category.rb" />
         <option value="$PROJECT_DIR$/spec/models/category_spec.rb" />
+        <option value="$PROJECT_DIR$/app/views/categories/show.html.haml" />
       </list>
     </option>
   </component>
@@ -484,6 +490,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myapp_3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="categories" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -943,13 +971,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="3" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_header.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="54" selection-start="277" selection-end="277" vertical-scroll-proportion="-5.8846154">
@@ -1015,7 +1036,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/videos_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="12" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
+        <state line="15" column="3" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1041,16 +1062,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/category.rb">
+    <entry file="file://$PROJECT_DIR$/spec/models/category_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="183" selection-end="183" vertical-scroll-proportion="0.26984128">
+        <state line="12" column="109" selection-start="324" selection-end="324" vertical-scroll-proportion="0.635514">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/category_spec.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/category.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="59" selection-end="59" vertical-scroll-proportion="0.2647975">
+        <state line="6" column="37" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="49" selection-start="586" selection-end="586" vertical-scroll-proportion="0.64705884">
           <folding />
         </state>
       </provider>

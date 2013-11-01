@@ -26,6 +26,6 @@
 .category-wrapper
   %h1= @category.name
   %ul.items-shell
-    - @category.videos.each do |v|
+    - @category.recent_videos.each do |v|
       %li
         %img(src="#{v.thumb_url}")
