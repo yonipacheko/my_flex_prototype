@@ -24,20 +24,23 @@ describe UsersController do
         post :create, user: Fabricate.attributes_for(:user)
         expect(response).to redirect_to sign_in_path
       end
-
+    end
     context 'with invalid input' do
       it 'doesnt create the user' do
-        #user_obj = Fabricate(:user)
-        #binding.pry
         post :create, user: { password: 'ad', full_name: 'asd' }
         expect(User.count).to eq(0)
       end
-      it 'render the :new template' do
+      #it 'render the :new template' do
+      #  post :create, user: { password: 'ad', full_name: 'asd' }
+      #  except(response).to render_template :new
+      #end
+      it ' set @user' do
+        post :create, user: { email: 'dsf@sdf.com', password: 'ad', full_name: 'asd' }
+
+        expect(assigns(:user)).to be_instance_of(User)
       end
-      it ' set @user'
-    end
+
 
     end
   end
-
 end

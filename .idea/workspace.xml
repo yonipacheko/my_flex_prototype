@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75b13246-48a4-4a09-8fb1-f6a3c25604ea" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/category_spec.rb" afterPath="$PROJECT_DIR$/spec/models/category_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/Fabricators/user_fabricator.rb" afterPath="$PROJECT_DIR$/spec/Fabricators/user_fabricator.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/video_spec.rb" afterPath="$PROJECT_DIR$/spec/models/video_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="myApp.iws" />
@@ -54,7 +50,7 @@
     <file path="/application_controller.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383283104045" ignored="false" />
     <file path="/videos_controller_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383302989467" ignored="false" />
     <file path="/user_fabricator.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383407492852" ignored="false" />
-    <file path="/users_controller_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383408424840" ignored="false" />
+    <file path="/users_controller_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383424535538" ignored="false" />
     <file path="/users1_controller.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383407901762" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +70,7 @@
     <favorites_list name="myApp" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.5">
+    <splitter split-orientation="vertical" split-proportion="0.4489796">
       <split-first>
         <leaf>
           <file leaf-file-name="categories_controller.rb" pinned="false" current="false" current-in-tab="false">
@@ -125,7 +121,7 @@
           <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0">
+                <state line="20" column="27" selection-start="286" selection-end="286" vertical-scroll-proportion="0.6304348">
                   <folding />
                 </state>
               </provider>
@@ -201,7 +197,7 @@
           <file leaf-file-name="users_controller_spec.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/spec/controllers/users_controller_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="32" column="61" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.35843372">
+                <state line="37" column="38" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.35501355">
                   <folding />
                 </state>
               </provider>
@@ -251,10 +247,10 @@
         <option value="$PROJECT_DIR$/app/models/video.rb" />
         <option value="$PROJECT_DIR$/spec/models/video_spec.rb" />
         <option value="$PROJECT_DIR$/spec/models/category_spec.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/spec/Fabricators/user_fabricator.rb" />
         <option value="$PROJECT_DIR$/spec/Fabricators/users1_controller.rb" />
         <option value="$PROJECT_DIR$/spec/Fabricators/otheruser_fabricator.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" />
       </list>
     </option>
@@ -1145,14 +1141,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0">
+        <state line="20" column="27" selection-start="286" selection-end="286" vertical-scroll-proportion="0.6304348">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/users_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="61" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.35843372">
+        <state line="37" column="38" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.35501355">
           <folding />
         </state>
       </provider>
