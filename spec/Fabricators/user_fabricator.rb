@@ -3,3 +3,4 @@ Fabricator(:user) do
   password 'password'
   full_name { Faker::Name.name }
 end
+
