@@ -30,10 +30,10 @@ describe UsersController do
         post :create, user: { password: 'ad', full_name: 'asd' }
         expect(User.count).to eq(0)
       end
-      #it 'render the :new template' do
-      #  post :create, user: { password: 'ad', full_name: 'asd' }
-      #  except(response).to render_template :new
-      #end
+      it 'render the :new template' do
+        post :create, user: { password: 'ad', full_name: 'asd' }
+       except(response).to render_template :new
+      end
       it ' set @user' do
         post :create, user: { email: 'dsf@sdf.com', password: 'ad', full_name: 'asd' }
 

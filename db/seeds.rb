@@ -10,7 +10,7 @@
 
 
 
-Video.create(title: "Monk", description: "Comedy crime procedural about detective with severe OCD.", thumb_url: '/tmp/monk.jpg', large_url: '/tmp/monk_large.jpg')
+monk = Video.create(title: "Monk", description: "Comedy crime procedural about detective with severe OCD.", thumb_url: '/tmp/manga.jpg', large_url: '/tmp/monk_large.jpg')
 Video.create(title: "Futurama", description: "Future comedy about pizza delivery boy who wakes up 1000 years later.", thumb_url: '/tmp/futurama.jpg', large_url: '/tmp/monk_large.jpg')
 Video.create(title: "South Park", description: "Crude but funny. South Park mocks every aspect of life. Every aspect!", thumb_url: '/tmp/monk.jpg', large_url: '/tmp/monk_large.jpg')
 Video.create(title: "Family Guy", description: "Pokes fun at most aspects of American life.", thumb_url: '/tmp/family_guy.jpg', large_url: '/tmp/monk_large.jpg')
@@ -25,6 +25,10 @@ Video.create(title: "Firefly", description: "Space western about diverse transpo
 Video.create(title: "Law & Order: SVU", description: "Crime procedural dealing with victims of sex crimes.", thumb_url: '/tmp/europareport.jpg', large_url: '/tmp/monk_large.jpg')
 Video.create(title: "The Big Bang Theory", description: "The intelectually gifted but socially challenged try to hit on hot girls.", thumb_url: '/tmp/futurama.jpg', large_url: '/tmp/monk_large.jpg')
 Video.create(title: "The Office", description: "Mockumentary about a paper sales office in a small town.", thumb_url: '/tmp/monk.jpg', large_url: '/tmp/monk_large.jpg')
+
+fer = User.create( full_name: 'Fer hero', password: 'fer', email: 'fer@fer.com')
+Review.create(user: fer, video: monk, rating: 3, content: 'about something cool' )
+Review.create(user: fer, video: monk, rating: 3, content: 'about spectacular cool' )
 
 Category.create(name: "TV Comedies")
 Category.create(name: "Cartoons")
