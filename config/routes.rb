@@ -14,6 +14,7 @@ Myflix::Application.routes.draw do
 
   resources :categories, only: [:new, :create, :show]
 
+  resources :queue_items, only: [:create]
   get 'my_queue', to: 'queue_items#index'
 
   get 'register', to: 'users#new'

@@ -46,11 +46,8 @@
     .description
       %h3.lead= @video.title
       %p= @video.description
-      %ul.actions
-        %li
-          %a.btn.btn-primary(href="") Watch Now
-        %li
-          %a.btn(href="") + My Queue
+    .actions
+      = link_to "+ My Queue", queue_items_path, method: :post, class: 'btn'
 %section.reviews.container
   .row
     .span10.offset1
