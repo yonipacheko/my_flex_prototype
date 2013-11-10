@@ -11,7 +11,7 @@ describe Video do
 
   it "Doesn't validate when title is not included" do
     video = Video.create(description:'something')
-    expect(Video.count).to eq(0) # there are already 2 times in table
+    expect(Video.count).to eq(0)
   end
 
   #validating when title is not included using shoulda_matchers
@@ -24,7 +24,7 @@ describe Video do
       expect(Video.search_by_title('hola')).to eq([])
     end
 
-    it "return an array of one video for an exact match" do
+    it "return an obj of one video for an exact match" do
       v1 = Fabricate(:video)
       v2 = Fabricate(:video)
       expect(Video.search_by_title("#{v1.title}")).to eq([v1])

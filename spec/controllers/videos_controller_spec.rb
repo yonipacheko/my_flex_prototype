@@ -13,7 +13,7 @@ describe VideosController do
 
   it 'sets @reviews for authenticated users' do
     session[:user_id] = Fabricate(:user).id
-    video =Fabricate(:video)
+    video = Fabricate(:video)
     review1 = Fabricate(:review, video: video)
     review2  = Fabricate(:review, video: video)
     get :show, id: video.id

@@ -9,11 +9,35 @@ class QueueItemsController < ApplicationController
   end
 
   def create
+    #binding.pry
+
     video = Video.find(params[:video_id])
     #user1 = User.find(session[:user_id])
-    #binding.pry
-    QueueItem.create(video: video, user: current_user, position: current_user.queue_items.count + 1) unless current_user.queue_items.map(&:video).include?(video)
+    queue_video(video)
     redirect_to my_queue_path
 
+  end
+
+  def destroy
+
+    queue_item = QueueItem.find(params[:id])
+    queue_item.destroy if current_user.queue_items.include?(queue_item)
+
+    redirect_to my_queue_path
+  end
+
+
+  private
+
+  def queue_video(video)
+    QueueItem.create(video: video, user: current_user, position: new_queuue_item_position ) unless current_user_queue_item_video?(video)
+  end
+
+  def new_queuue_item_position
+    current_user.queue_items.count + 1
+  end
+
+  def current_user_queue_item_video?(video)
+    current_user.queue_items.map(&:video).include?(video)
   end
 end

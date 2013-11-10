@@ -47,7 +47,7 @@
       %h3.lead= @video.title
       %p= @video.description
     .actions
-      = link_to "+ My Queue", queue_items_path, method: :post, class: 'btn'
+      = link_to "+ My Queue", queue_items_path(video_id: @video.id), method: :post, class: 'btn'# obj_path(another_path, moreinformation). It's a way to pass information to the server side
 %section.reviews.container
   .row
     .span10.offset1
