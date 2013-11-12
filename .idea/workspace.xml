@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75b13246-48a4-4a09-8fb1-f6a3c25604ea" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/queue_item.rb" afterPath="$PROJECT_DIR$/app/models/queue_item.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/Fabricators/queue_item_fabricator.rb" afterPath="$PROJECT_DIR$/spec/Fabricators/queue_item_fabricator.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/queue_items_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/queue_items_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/queue_items_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/queue_items_controller_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/queue_items_spec.rb" afterPath="$PROJECT_DIR$/spec/models/queue_items_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="myApp.iws" />
@@ -63,14 +58,14 @@
     <file path="/20131103122509_create_reviews.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383481670052" ignored="false" />
     <file path="/reviews_controller.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383650874437" ignored="false" />
     <file path="/reviews_controller_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383651791051" ignored="false" />
-    <file path="/queue_items_controller.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384269755143" ignored="false" />
+    <file path="/queue_items_controller.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384270286054" ignored="false" />
     <file path="/queue_controller.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383840959432" ignored="false" />
     <file path="/queue_item_fabricator.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384264525110" ignored="false" />
     <file path="/queue_item.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384263554034" ignored="false" />
     <file path="/20131107144519_create_queue_items.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383835635302" ignored="false" />
     <file path="/queue_item_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383843179105" ignored="false" />
     <file path="/queue_items_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384263641254" ignored="false" />
-    <file path="/queue_items_controller_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384269924618" ignored="false" />
+    <file path="/queue_items_controller_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384270557814" ignored="false" />
     <file path="/user_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384263918021" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -150,7 +145,7 @@
           <file leaf-file-name="queue_items_controller_spec.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/spec/controllers/queue_items_controller_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="118" column="55" selection-start="4170" selection-end="4170" vertical-scroll-proportion="0.48493975">
+                <state line="121" column="40" selection-start="4336" selection-end="4336" vertical-scroll-proportion="0.5873494">
                   <folding />
                 </state>
               </provider>
@@ -177,7 +172,7 @@
           <file leaf-file-name="queue_items_controller.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/queue_items_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="46" column="29" selection-start="1099" selection-end="1099" vertical-scroll-proportion="0.0">
+                <state line="46" column="29" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -190,7 +185,7 @@
           <file leaf-file-name="queue_items_controller.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/controllers/queue_items_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="47" column="70" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.4822485">
+                <state line="24" column="35" selection-start="504" selection-end="504" vertical-scroll-proportion="0.5325444">
                   <folding />
                 </state>
               </provider>
@@ -1151,14 +1146,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/queue_items_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="29" selection-start="1099" selection-end="1099" vertical-scroll-proportion="0.0">
+        <state line="46" column="29" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/queue_items_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="55" selection-start="4170" selection-end="4170" vertical-scroll-proportion="0.48493975">
+        <state line="121" column="40" selection-start="4336" selection-end="4336" vertical-scroll-proportion="0.5873494">
           <folding />
         </state>
       </provider>

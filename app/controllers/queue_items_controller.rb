@@ -22,7 +22,7 @@ class QueueItemsController < ApplicationController
 
     queue_item = QueueItem.find(params[:id])
     queue_item.destroy if current_user.queue_items.include?(queue_item)
-
+    normalize_queue_items_positions
     redirect_to my_queue_path
   end
 
