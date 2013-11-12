@@ -113,6 +113,14 @@ describe QueueItemsController do
       expect(response).to redirect_to sign_in_path
     end
 
+    it ' normalizes the the remaining queue items' do
+      hello = Fabricate(:user)
+      session[:user_id] = hello
+      queuue_item1 = Fabricate(:queue_item, user: hello, position: 1)
+      queuue_item2 = Fabricate(:queue_item, user: hello, position: 2)
+      delete :destroy, id: queuue_item1.id
+      expect(QueueItem.count).to eq(1)
+    end
   end
 
   describe 'POST update queue' do
@@ -145,7 +153,36 @@ describe QueueItemsController do
         post :update_queue, queue_items: [{ id: queuue_item1.id, position: 2},{id: queuue_item2, position: 1}]
         expect(kitty.queue_items.map(&:position)).to eq([1, 2])
       end
-    context 'with invalid inputs'
+    context 'with invalid inputs' do
+      it 'redirects to my_queue_page' do
+        kitty = Fabricate(:user)
+        session[:user_id] = kitty
+        queuue_item1 = Fabricate(:queue_item, user: kitty, position: 1)
+        queuue_item2 = Fabricate(:queue_item, user: kitty, position: 2)
+        post :update_queue, queue_items: [{ id: queuue_item1.id, position: 2},{id: queuue_item2, position: 1}]
+        expect(response).to redirect_to my_queue_path
+      end
+      it 'doesnt not change the queue items' do
+        kitty = Fabricate(:user)
+        session[:user_id] = kitty
+        queue_item1 = Fabricate(:queue_item, user: kitty, position: 1)
+        queue_item2 = Fabricate(:queue_item, user: kitty, position: 2)
+        post :update_queue, queue_items: [{ id: queue_item1.id, position: 2},{id: queue_item2, position: 1.5}]
+        expect(queue_item1.reload.position).to eq(1)
+      end
+
+      it 'sets  the flash error message' do
+        kitty = Fabricate(:user)
+        session[:user_id] = kitty
+        queue_item1 = Fabricate(:queue_item, user: kitty, position: 1)
+        queue_item2 = Fabricate(:queue_item, user: kitty, position: 2)
+        post :update_queue, queue_items: [{ id: queue_item1.id, position: 2},{id: queue_item2, position: 1.5}]
+        expect(flash[:error]).to be_present
+
+      end
+
+    end
+
     context 'with authenticated users'
     context 'with the queue items that don not belong to the current user'
   end

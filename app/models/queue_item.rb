@@ -4,6 +4,7 @@ class QueueItem < ActiveRecord::Base
   belongs_to :user
   belongs_to :video
 
+  validates_numericality_of :position, only_integer: true
   #delegate :category, to: :video
   #delegate :title, to: :video, prefix: :video #About the prefix: we want to call the method: video.title otherwise it should have called it like category-method above
 
