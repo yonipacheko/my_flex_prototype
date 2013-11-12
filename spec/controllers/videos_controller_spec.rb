@@ -5,7 +5,7 @@ describe VideosController do
 
 
   it 'sets @video ' do
-    session[:user_id] = Fabricate(:user).id
+    session[:user_id] = Fabricate(:user).id    # because u have the before_filter in the controller
     video = Fabricate(:video)
     get :show, id: video.id
     expect(assigns(:video)).to eq(video)

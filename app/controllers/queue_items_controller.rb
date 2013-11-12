@@ -26,6 +26,17 @@ class QueueItemsController < ApplicationController
     redirect_to my_queue_path
   end
 
+  def update_queue
+    params[:queue_items].each do |queue_item_data|
+      queue_item = QueueItem.find(queue_item_data[:id]) # we can't do: "queue_item_data.id", cuz it's not an attr. but a Hash remember?
+      queue_item.update_attributes!(position: queue_item_data[:position])
+    end
+    current_user.queue_items.each_with_index do |queue_item, index|
+          queue_item.update_attributes(position: index + 1  )
+    end
+
+    redirect_to my_queue_path
+  end
 
   private
 

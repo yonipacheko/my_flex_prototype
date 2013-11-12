@@ -114,4 +114,39 @@ describe QueueItemsController do
     end
 
   end
+
+  describe 'POST update queue' do
+    context 'with valid inputs'
+      it 'redirects to my queue page' do
+        kitty = Fabricate(:user)
+        session[:user_id] = kitty
+        queuue_item1 = Fabricate(:queue_item, user: kitty, position: 1)
+        queuue_item2 = Fabricate(:queue_item, user: kitty, position: 2)
+        post :update_queue, queue_items: [{ id: queuue_item1.id, position: 2},{id: queuue_item2, position: 1}]
+        expect(response).to redirect_to my_queue_path
+
+      end
+
+      it 'reorders the queue items' do
+        kitty = Fabricate(:user)
+        session[:user_id] = kitty
+        queue_item1 = Fabricate(:queue_item, user: kitty, position: 1)
+        queue_item2 = Fabricate(:queue_item, user: kitty, position: 2)
+        post :update_queue, queue_items: [{ id: queue_item1.id, position: 2},{id: queue_item2.id, position: 1}]
+        expect(kitty.queue_items).to eq([queue_item2, queue_item1])
+      end
+
+
+      it 'normalizes the position numbers' do
+        kitty = Fabricate(:user)
+        session[:user_id] = kitty
+        queuue_item1 = Fabricate(:queue_item, user: kitty, position: 1)
+        queuue_item2 = Fabricate(:queue_item, user: kitty, position: 2)
+        post :update_queue, queue_items: [{ id: queuue_item1.id, position: 2},{id: queuue_item2, position: 1}]
+        expect(kitty.queue_items.map(&:position)).to eq([1, 2])
+      end
+    context 'with invalid inputs'
+    context 'with authenticated users'
+    context 'with the queue items that don not belong to the current user'
+  end
 end
