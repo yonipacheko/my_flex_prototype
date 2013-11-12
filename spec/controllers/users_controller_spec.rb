@@ -32,7 +32,7 @@ describe UsersController do
       end
       it 'render the :new template' do
         post :create, user: { password: 'ad', full_name: 'asd' }
-       except(response).to render_template :new
+       expect(response).to render_template :new
       end
       it ' set @user' do
         post :create, user: { email: 'dsf@sdf.com', password: 'ad', full_name: 'asd' }
