@@ -13,6 +13,10 @@ class QueueItem < ActiveRecord::Base
     review.rating  if review
   end
 
+  def rating=(new_rating)   # this is how U retrieve data from the Controller to the ReviewModel (this a virtual attr.)
+
+  end
+
   def category_name
     video.categories.first.name
     #binding.pry

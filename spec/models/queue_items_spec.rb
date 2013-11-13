@@ -28,6 +28,8 @@ describe QueueItem do
       queue_item = Fabricate(:queue_item, video: video, user: user)
       expect(queue_item.rating).to eq(nil)
     end
+
+
   end
 
   describe '#category_name' do
