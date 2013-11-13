@@ -32,7 +32,7 @@ class QueueItemsController < ApplicationController
         params[:queue_items].each do |queue_item_data|
 
           queue_item = QueueItem.find(queue_item_data[:id]) # we can't do: "queue_item_data.id", cuz it's not an attr. but a Hash remember?
-          queue_item.update_attributes!(position: queue_item_data[:position], rating: queue_item_data[:rating])
+          queue_item.update_attributes!(position: queue_item_data[:position], rating: queue_item_data[:rating]) if queue_item.user == current_user
 
         end # ends params-loop
       end
