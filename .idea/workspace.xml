@@ -5,7 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/queue_item.rb" afterPath="$PROJECT_DIR$/app/models/queue_item.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/queue_items_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/queue_items_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/queue_items_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/queue_items_controller_spec.rb" />
     </list>
     <ignored path="myApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,16 +60,16 @@
     <file path="/20131103122509_create_reviews.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383481670052" ignored="false" />
     <file path="/reviews_controller.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383650874437" ignored="false" />
     <file path="/reviews_controller_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383651791051" ignored="false" />
-    <file path="/queue_items_controller.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384368446990" ignored="false" />
+    <file path="/queue_items_controller.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384402830101" ignored="false" />
     <file path="/queue_controller.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383840959432" ignored="false" />
     <file path="/queue_item_fabricator.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384264525110" ignored="false" />
-    <file path="/queue_item.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384366442443" ignored="false" />
+    <file path="/queue_item.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384402819830" ignored="false" />
     <file path="/20131107144519_create_queue_items.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383835635302" ignored="false" />
     <file path="/queue_item_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383843179105" ignored="false" />
     <file path="/queue_items_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384364657891" ignored="false" />
-    <file path="/queue_items_controller_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384270557814" ignored="false" />
+    <file path="/queue_items_controller_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384405600518" ignored="false" />
     <file path="/user_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384263918021" ignored="false" />
-    <file path="/application_helper.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384367497623" ignored="false" />
+    <file path="/application_helper.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384401732486" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,88 +88,89 @@
     <favorites_list name="myApp" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="19" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="queue_item.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/models/queue_item.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="34" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="review.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/models/review.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="35" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="queue_items_controller.rb" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/controllers/queue_items_controller.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="30" column="36" selection-start="590" selection-end="620" vertical-scroll-proportion="0.012747875">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="queue_items_spec.rb" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/spec/models/queue_items_spec.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="61" column="36" selection-start="1933" selection-end="1933" vertical-scroll-proportion="0.6251768">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/queue_items/index.html.haml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="29" column="0" selection-start="1071" selection-end="1071" vertical-scroll-proportion="-18.961538">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="3" column="5" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/videos/show.html.haml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="57" column="55" selection-start="973" selection-end="973" vertical-scroll-proportion="-9.192307">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="queue_items_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/models/queue_items_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="36" selection-start="787" selection-end="788" vertical-scroll-proportion="-9.08">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/queue_items/index.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="0" selection-start="1071" selection-end="1071" vertical-scroll-proportion="-18.961538">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="60" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/videos/show.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="55" selection-start="973" selection-end="973" vertical-scroll-proportion="-9.192307">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="queue_items_controller_spec.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/controllers/queue_items_controller_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="165" column="39" selection-start="5824" selection-end="5824" vertical-scroll-proportion="0.4618705">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="19" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="queue_item.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/queue_item.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="2" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="review.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/review.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="3" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="queue_items_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/queue_items_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="7" selection-start="1055" selection-end="1055" vertical-scroll-proportion="-17.68">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -195,18 +196,18 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/spec/models/user_spec.rb" />
         <option value="$PROJECT_DIR$/spec/Fabricators/queue_item_fabricator.rb" />
-        <option value="$PROJECT_DIR$/spec/controllers/queue_items_controller_spec.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/video.rb" />
         <option value="$PROJECT_DIR$/app/views/queue_items/index.html.haml" />
         <option value="$PROJECT_DIR$/app/models/review.rb" />
-        <option value="$PROJECT_DIR$/app/models/queue_item.rb" />
         <option value="$PROJECT_DIR$/spec/models/queue_items_spec.rb" />
-        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/videos/show.html.haml" />
+        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+        <option value="$PROJECT_DIR$/app/models/queue_item.rb" />
         <option value="$PROJECT_DIR$/app/controllers/queue_items_controller.rb" />
+        <option value="$PROJECT_DIR$/spec/controllers/queue_items_controller_spec.rb" />
       </list>
     </option>
   </component>
@@ -689,7 +690,7 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../second_course_1/projects/myapp_second" />
     <property name="FullScreen" value="false" />
@@ -1076,13 +1077,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/controllers/queue_items_controller_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="40" selection-start="4336" selection-end="4336" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131103122509_create_reviews.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="39" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
@@ -1132,23 +1126,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="19" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/videos/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="55" selection-start="973" selection-end="973" vertical-scroll-proportion="-9.192307">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="5" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1160,30 +1140,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/queue_item.rb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="34" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/review.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="35" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
+        <state line="11" column="60" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/queue_items_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="36" selection-start="1933" selection-end="1933" vertical-scroll-proportion="0.6251768">
+        <state line="25" column="36" selection-start="787" selection-end="788" vertical-scroll-proportion="-9.08">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="19" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/queue_item.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="2" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/review.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="3" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/queue_items_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="36" selection-start="590" selection-end="620" vertical-scroll-proportion="0.012747875">
+        <state line="39" column="7" selection-start="1055" selection-end="1055" vertical-scroll-proportion="-17.68">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/controllers/queue_items_controller_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="165" column="39" selection-start="5824" selection-end="5824" vertical-scroll-proportion="0.4618705">
           <folding />
         </state>
       </provider>

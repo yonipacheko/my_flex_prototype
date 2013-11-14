@@ -7,6 +7,10 @@ class QueueItem < ActiveRecord::Base
    #delegate :category, to: :video
   #delegate :title, to: :video, prefix: :video #About the prefix: we want to call the method: video.title otherwise it should have called it like category-method above
 
+  validates_numericality_of :position, {only_integer: true}
+
+
+
   def rating
     @review.rating if reviewing
   end

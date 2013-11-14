@@ -37,7 +37,7 @@ class QueueItemsController < ApplicationController
         end # ends params-loop
       end
     rescue ActiveRecord::RecordInvalid
-      binding.pry
+      #binding.pry
       flash[:error] = "Invalid type of numbers"
       redirect_to my_queue_path
       return
