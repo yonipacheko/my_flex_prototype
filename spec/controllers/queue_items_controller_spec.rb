@@ -6,17 +6,23 @@ describe QueueItemsController do
     it 'sets @queue_items to queue items of the logged in user' do
 
       carol = Fabricate(:user)
-      session[:user_id] = carol.id
+     set_current_user(carol)
       queue_item1 = Fabricate(:queue_item, user: carol)
       queue_item2 = Fabricate(:queue_item, user: carol)
       get :index
       expect(assigns(:queue_items)).to match_array([queue_item1, queue_item2])
     end
 
-    it 'redirects  to the sign_in page for unauthenticated users' do
-      get :index
-      expect(response). to redirect_to(sign_in_path)
+    #it 'redirects  to the sign_in page for unauthenticated users' do
+    #  get :index
+    #  expect(response). to redirect_to(sign_in_path)
+    #end
+
+    it_behaves_like 'requires sign in' do
+      let(:action) { get :index }
     end
+
+
   end
 
   describe 'POST create' do
@@ -53,7 +59,7 @@ describe QueueItemsController do
     end
     it ' pus the video in the last place in the queue' do
       carol = Fabricate(:user)
-      session[:user_id] = carol.id
+      set_current_user(carol)
       futurama = Fabricate(:video)
       Fabricate(:queue_item, video: futurama, user: carol) #first item built!
       monk = Fabricate(:video)
@@ -65,19 +71,25 @@ describe QueueItemsController do
 
     it ' doesnt put video in the queue if video is already in the queue' do
       carol = Fabricate(:user)
-      session[:user_id] = carol.id
+     set_current_user(carol)
       futurama = Fabricate(:video)
       Fabricate(:queue_item, video: futurama, user: carol) #first item built!
       post :create, video_id: futurama.id # we build the second item heating the DB
       expect(carol.queue_items.count).to eq(1)
 
     end
-    it ' redirects user to sign_in if user is not authenticated' do
-      futurama = Fabricate(:video)
-      post :create, video_id: futurama.id # we build the second item heating the DB
 
-      expect(response).to redirect_to sign_in_path
+    #it ' redirects user to sign_in if user is not authenticated' do
+    #  futurama = Fabricate(:video)
+    #  post :create, video_id: futurama.id # we build the second item heating the DB
+    #  expect(response).to redirect_to sign_in_path
+    #end
+
+    it_behaves_like 'requires sign in' do
+       futurama = Fabricate(:video)
+      let(:action) { post :create, video_id: futurama.id } # we build the second item heating the DB
     end
+
   end
 
   describe 'DELETE destroy' do
@@ -99,7 +111,7 @@ describe QueueItemsController do
 
     it ' it doesnt delete the queue-item that doesnt own the current user' do
       carol = Fabricate(:user)
-      session[:user_id] = carol.id
+     set_current_user(carol)
       another_user = Fabricate(:user)
       queue_item = Fabricate(:queue_item, user: another_user)    # creating an item, heating the DB
       delete :destroy, id: queue_item.id
@@ -115,7 +127,7 @@ describe QueueItemsController do
 
     it ' normalizes the the remaining queue items' do
       hello = Fabricate(:user)
-      session[:user_id] = hello
+      set_current_user(hello)
       video = Fabricate(:video)
       queue_item1 = Fabricate(:queue_item, user: hello, video: video, position: 1)
       queue_item2 = Fabricate(:queue_item, user: hello, video: video, position: 2)
