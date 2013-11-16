@@ -6,7 +6,7 @@ describe QueueItemsController do
     it 'sets @queue_items to queue items of the logged in user' do
 
       carol = Fabricate(:user)
-     set_current_user(carol)
+      set_current_user(carol) # it comes from Macro.rb
       queue_item1 = Fabricate(:queue_item, user: carol)
       queue_item2 = Fabricate(:queue_item, user: carol)
       get :index
