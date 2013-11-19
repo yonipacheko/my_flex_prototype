@@ -9,10 +9,11 @@ describe Video do
   #  expect(Video.count).to eq(0)
   #end
 
-  it "Doesn't validate when title is not included" do
-    video = Video.create(description:'something')
-    expect(Video.count).to eq(0)
-  end
+  #it "Doesn't validate when title is not included" do
+  #  video = Video.create(description:'something')
+  #  require 'pry'; binding.pry
+  #  expect(Video.count).to eq(0)
+  #end
 
   #validating when title is not included using shoulda_matchers
   it { should validate_presence_of (:title) }
