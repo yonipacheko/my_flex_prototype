@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75b13246-48a4-4a09-8fb1-f6a3c25604ea" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/support/macro.rb" afterPath="$PROJECT_DIR$/spec/support/macro.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="75b13246-48a4-4a09-8fb1-f6a3c25604ea" name="Default" comment="" />
     <ignored path="myApp.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384858657594" ignored="false" />
@@ -69,7 +66,7 @@
     <file path="/user_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384263918021" ignored="false" />
     <file path="/application_helper.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384401732486" ignored="false" />
     <file path="/user_sign_in_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384422928953" ignored="false" />
-    <file path="/macro.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384858509207" ignored="false" />
+    <file path="/macro.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384858773461" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +109,7 @@
           <file leaf-file-name="macro.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/spec/support/macro.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="18" column="42" selection-start="399" selection-end="399" vertical-scroll-proportion="0.43714285">
+                <state line="18" column="51" selection-start="399" selection-end="399" vertical-scroll-proportion="0.43714285">
                   <folding />
                 </state>
               </provider>
@@ -981,7 +978,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/support/macro.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="42" selection-start="399" selection-end="399" vertical-scroll-proportion="0.43714285">
+        <state line="18" column="51" selection-start="399" selection-end="399" vertical-scroll-proportion="0.43714285">
           <folding />
         </state>
       </provider>
