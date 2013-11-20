@@ -66,11 +66,11 @@
       %header
         %h3 User Reviews ("#{@reviews.count}")
       %ul
-        = @reviews.each do |review|
+        - @reviews.each do |review|
           %article.review
             %li.row
               .span2
-                %span Rating: review.rating
+                %span Rating: #{review.rating}
                 %p
                   by
                   = link_to review.user.full_name, review.user

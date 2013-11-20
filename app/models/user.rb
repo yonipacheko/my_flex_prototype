@@ -6,7 +6,7 @@
   has_secure_password validations: false
 
   has_many :queue_items, ->{order(:position)}
-  has_many :reviews
+  has_many :reviews, -> {order('created_at DESC')}
 
   def normalize_queue_items_positions
     queue_items.each_with_index do |queue_item, index|
