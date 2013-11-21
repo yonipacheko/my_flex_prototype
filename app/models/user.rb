@@ -22,4 +22,10 @@
   def queue_video?(video)
     queue_items.map(&:video).include?(video)
   end
+
+  def follows?(other_obj)
+
+    following_relationships.map(&:leader).include?(other_obj)
+
+  end
 end

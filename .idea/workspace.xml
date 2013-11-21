@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75b13246-48a4-4a09-8fb1-f6a3c25604ea" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/relationships/index.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/relationship.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/relationships_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/controllers/relationships_controller_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/Fabricators/relationships_fabricator.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_header.html.haml" afterPath="$PROJECT_DIR$/app/views/shared/_header.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/relationships_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/relationships_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/relationships_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/relationships_controller_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/review.rb" afterPath="$PROJECT_DIR$/app/models/review.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/show.html.haml" afterPath="$PROJECT_DIR$/app/views/users/show.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/user.sass" afterPath="$PROJECT_DIR$/app/assets/stylesheets/user.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="myApp.iws" />
@@ -20,10 +19,10 @@
     <file path="/video.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384353409132" ignored="false" />
     <file path="/seeds.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384202728554" ignored="false" />
     <file path="/videos_controller.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383484294804" ignored="false" />
-    <file path="/routes.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1385014298415" ignored="false" />
+    <file path="/routes.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1385047278431" ignored="false" />
     <file path="/index.html.haml" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1385014519357" ignored="false" />
     <file path="$PROJECT_DIR$/../../../second_course_1/projects/myapp/config/routes.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1380791423218" ignored="false" />
-    <file path="/show.html.haml" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384891935472" ignored="false" />
+    <file path="/show.html.haml" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1385047513054" ignored="false" />
     <file path="/20131004085209_create_categories_table.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1380878292336" ignored="false" />
     <file path="/category.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384142204513" ignored="false" />
     <file path="/categories_controller.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1381117743252" ignored="false" />
@@ -53,7 +52,7 @@
     <file path="/front.html.haml" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383281385452" ignored="false" />
     <file path="/users_controller.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384888771574" ignored="false" />
     <file path="/new.html.haml" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384423461941" ignored="false" />
-    <file path="/user.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1385027191815" ignored="false" />
+    <file path="/user.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1385052241528" ignored="false" />
     <file path="/sessions_controller.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383283971971" ignored="false" />
     <file path="/application_controller.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383283104045" ignored="false" />
     <file path="/videos_controller_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384114106234" ignored="false" />
@@ -74,17 +73,18 @@
     <file path="/queue_item_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1383843179105" ignored="false" />
     <file path="/queue_items_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384364657891" ignored="false" />
     <file path="/queue_items_controller_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384405600518" ignored="false" />
-    <file path="/user_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384889503517" ignored="false" />
+    <file path="/user_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1385052373659" ignored="false" />
     <file path="/application_helper.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384401732486" ignored="false" />
     <file path="/user_sign_in_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384422928953" ignored="false" />
     <file path="/macro.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384858773461" ignored="false" />
     <file path="/user.html.haml" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384871597871" ignored="false" />
     <file path="/shared_examples.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384887911145" ignored="false" />
-    <file path="/relationships_controller.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1385031421156" ignored="false" />
-    <file path="/relationships_controller_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1385031367503" ignored="false" />
+    <file path="/relationships_controller.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1385063116671" ignored="false" />
+    <file path="/relationships_controller_spec.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1385063023777" ignored="false" />
     <file path="/relationships_fabricator.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1385009942638" ignored="false" />
-    <file path="/relationship.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1385010533910" ignored="false" />
+    <file path="/relationship.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1385043354697" ignored="false" />
     <file path="/20131121050204_create_relationships.rb" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1385010324877" ignored="false" />
+    <file path="/user.sass" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1385047428521" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,84 +106,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="queue_item.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/models/queue_item.rb">
+          <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/relationships/index.html.haml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="21" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RailsDependency/#myApp" pinned="false" current="false" current-in-tab="false">
-            <entry file="uml://RailsDependency/#myApp">
-              <provider selected="true" editor-type-id="UmlEditorProvider">
-                <state>
-                  <ID>RailsDependency</ID>
-                  <OriginalElement>#myApp</OriginalElement>
-                  <nodes>
-                    <node x="401.5" y="0.0">User</node>
-                    <node x="0.0" y="298.5">Category</node>
-                    <node x="797.0" y="366.0">Categorization</node>
-                    <node x="0.0" y="488.0">Relationship</node>
-                    <node x="807.0" y="201.99999999999997">Review</node>
-                    <node x="386.0" y="186.99999999999997">Video</node>
-                    <node x="817.0" y="11.499999999999972">QueueItem</node>
-                  </nodes>
-                  <notes />
-                  <edges>
-                    <edge source="User" target="Review">
-                      <point x="150.0" y="36.75" />
-                      <point x="717.0" y="110.24999999999997" />
-                      <point x="-89.5" y="-31.0" />
-                    </edge>
-                    <edge source="Category" target="Categorization">
-                      <point x="153.0" y="33.66666666666663" />
-                      <point x="386.0" y="423.75" />
-                      <point x="-99.5" y="19.25" />
-                    </edge>
-                    <edge source="Video" target="Categorization">
-                      <point x="165.5" y="72.0" />
-                      <point x="-99.5" y="-19.25" />
-                    </edge>
-                    <edge source="Video" target="Review">
-                      <point x="165.5" y="-0.0" />
-                      <point x="-89.5" y="31.0" />
-                    </edge>
-                    <edge source="Video" target="QueueItem">
-                      <point x="165.5" y="-72.0" />
-                      <point x="797.0" y="87.24999999999997" />
-                      <point x="-79.5" y="25.25" />
-                    </edge>
-                    <edge source="User" target="QueueItem">
-                      <point x="150.0" y="-36.75" />
-                      <point x="-79.5" y="-25.25" />
-                    </edge>
-                    <edge source="Category" target="Video">
-                      <point x="153.0" y="-0.0" />
-                      <point x="-165.5" y="54.0" />
-                    </edge>
-                    <edge source="Video" target="Category">
-                      <point x="-165.5" y="-54.0" />
-                      <point x="153.0" y="-33.666666666666686" />
-                    </edge>
-                  </edges>
-                  <settings layout="Hierarchic Group" zoom="0.8935039370078739" x="327.0" y="174.0" />
-                  <SelectedNodes>
-                    <node>Video</node>
-                  </SelectedNodes>
-                  <Categories>
-                    <Category>Migration fields</Category>
-                    <Category>Association fields</Category>
-                  </Categories>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="review.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/models/review.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                <state line="17" column="41" selection-start="468" selection-end="468" vertical-scroll-proportion="-11.115385">
                   <folding />
                 </state>
               </provider>
@@ -192,7 +118,52 @@
           <file leaf-file-name="shared_examples.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/support/shared_examples.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="33" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
+                <state line="8" column="24" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="20131028110618_create_users.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/db/migrate/20131028110618_create_users.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="user_spec.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="24" column="46" selection-start="834" selection-end="834" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="spec_helper.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/users/show.html.haml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="14" column="50" selection-start="499" selection-end="499" vertical-scroll-proportion="-9.153846">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="relationships_controller.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/controllers/relationships_controller.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="14" column="4" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -201,7 +172,16 @@
           <file leaf-file-name="user_fabricator.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/Fabricators/user_fabricator.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="20" vertical-scroll-proportion="0.0">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="17" column="60" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -210,7 +190,7 @@
           <file leaf-file-name="relationships_controller_spec.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/spec/controllers/relationships_controller_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="52" column="40" selection-start="1734" selection-end="1734" vertical-scroll-proportion="0.92827004">
+                <state line="104" column="40" selection-start="3275" selection-end="3275" vertical-scroll-proportion="0.87627363">
                   <folding />
                 </state>
               </provider>
@@ -219,79 +199,17 @@
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="vertical" split-proportion="0.5">
-          <split-first>
-            <leaf>
-              <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/app/views/relationships/index.html.haml">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="17" column="41" selection-start="468" selection-end="468" vertical-scroll-proportion="0.36050156">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="9" column="36" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/config/routes.rb">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="26" column="43" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="relationship.rb" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/app/models/relationship.rb">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="6" column="30" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf>
-              <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/app/views/relationships/index.html.haml">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="19" column="72" selection-start="641" selection-end="641" vertical-scroll-proportion="-4.6153846">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="20131028110618_create_users.rb" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/db/migrate/20131028110618_create_users.rb">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="relationships_controller.rb" pinned="false" current="true" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/app/controllers/relationships_controller.rb">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="14" column="65" selection-start="446" selection-end="446" vertical-scroll-proportion="0.7">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
+        <leaf>
+          <file leaf-file-name="relationships_controller.rb" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/controllers/relationships_controller.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="13" column="102" selection-start="415" selection-end="415" vertical-scroll-proportion="0.30068028">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
       </split-second>
     </splitter>
   </component>
@@ -315,20 +233,20 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/users/show.html.haml" />
-        <option value="$PROJECT_DIR$/spec/models/user_spec.rb" />
-        <option value="$PROJECT_DIR$/app/views/videos/show.html.haml" />
         <option value="$PROJECT_DIR$/app/views/shared/_header.html.haml" />
         <option value="$PROJECT_DIR$/app/views/realationships/index.html.haml" />
         <option value="$PROJECT_DIR$/app/models/queue_item.rb" />
         <option value="$PROJECT_DIR$/spec/Fabricators/relationships_fabricator.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131121050204_create_relationships.rb" />
+        <option value="$PROJECT_DIR$/app/views/relationships/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/relationships/destroy.html.haml" />
         <option value="$PROJECT_DIR$/app/models/relationship.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/relationships/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/models/review.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/user.sass" />
+        <option value="$PROJECT_DIR$/app/views/users/show.html.haml" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/views/relationships/destroy.html.haml" />
+        <option value="$PROJECT_DIR$/spec/models/user_spec.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/relationships_controller_spec.rb" />
         <option value="$PROJECT_DIR$/app/controllers/relationships_controller.rb" />
       </list>
@@ -439,60 +357,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="features" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myflix-oct-2013" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fabricators" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myflix-oct-2013" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myflix-oct-2013" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -551,7 +415,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="relationships" />
+              <option name="myItemId" value="users" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -938,8 +802,9 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3725744" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789117" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32689834" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964029" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24928162" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22701149" sideWeight="0.6010296" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989704" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13649425" sideWeight="0.36679536" order="2" side_tool="true" content_ui="tabs" />
@@ -949,7 +814,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729626" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1017,9 +881,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/Fabricators/relationships_fabricator.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/queue_item.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="2" selection-start="29" selection-end="29" vertical-scroll-proportion="0.024285715">
+        <state line="14" column="21" selection-start="393" selection-end="393" vertical-scroll-proportion="0.07172996">
           <folding />
         </state>
       </provider>
@@ -1031,86 +895,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://RailsDependency/#myApp">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>RailsDependency</ID>
-          <OriginalElement>#myApp</OriginalElement>
-          <nodes>
-            <node x="401.5" y="0.0">User</node>
-            <node x="0.0" y="298.5">Category</node>
-            <node x="797.0" y="366.0">Categorization</node>
-            <node x="0.0" y="488.0">Relationship</node>
-            <node x="807.0" y="201.99999999999997">Review</node>
-            <node x="386.0" y="186.99999999999997">Video</node>
-            <node x="817.0" y="11.499999999999972">QueueItem</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="User" target="Review">
-              <point x="150.0" y="36.75" />
-              <point x="717.0" y="110.24999999999997" />
-              <point x="-89.5" y="-31.0" />
-            </edge>
-            <edge source="Category" target="Categorization">
-              <point x="153.0" y="33.66666666666663" />
-              <point x="386.0" y="423.75" />
-              <point x="-99.5" y="19.25" />
-            </edge>
-            <edge source="Video" target="Categorization">
-              <point x="165.5" y="72.0" />
-              <point x="-99.5" y="-19.25" />
-            </edge>
-            <edge source="Video" target="Review">
-              <point x="165.5" y="-0.0" />
-              <point x="-89.5" y="31.0" />
-            </edge>
-            <edge source="Video" target="QueueItem">
-              <point x="165.5" y="-72.0" />
-              <point x="797.0" y="87.24999999999997" />
-              <point x="-79.5" y="25.25" />
-            </edge>
-            <edge source="User" target="QueueItem">
-              <point x="150.0" y="-36.75" />
-              <point x="-79.5" y="-25.25" />
-            </edge>
-            <edge source="Category" target="Video">
-              <point x="153.0" y="-0.0" />
-              <point x="-165.5" y="54.0" />
-            </edge>
-            <edge source="Video" target="Category">
-              <point x="-165.5" y="-54.0" />
-              <point x="153.0" y="-33.666666666666686" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.8935039370078739" x="327.0" y="174.0" />
-          <SelectedNodes>
-            <node>Video</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Migration fields</Category>
-            <Category>Association fields</Category>
-          </Categories>
+    <entry file="file://$PROJECT_DIR$/app/models/relationship.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0508982">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/review.rb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="54" selection-start="728" selection-end="728" vertical-scroll-proportion="0.8258258">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/controllers/reviews_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/Fabricators/user_fabricator.rb">
+    <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="20" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/queue_item.rb">
+    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="21" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="50" selection-start="499" selection-end="499" vertical-scroll-proportion="-9.153846">
           <folding />
         </state>
       </provider>
@@ -1124,56 +946,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/support/shared_examples.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="33" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
+        <state line="8" column="24" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="43" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="36" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/relationship.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="30" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/relationships/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="72" selection-start="641" selection-end="641" vertical-scroll-proportion="-4.6153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/controllers/queue_items_controller_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/Fabricators/user_fabricator.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/relationships/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="41" selection-start="468" selection-end="468" vertical-scroll-proportion="-11.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="46" selection-start="834" selection-end="834" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="60" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/relationships_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="40" selection-start="1734" selection-end="1734" vertical-scroll-proportion="0.92827004">
+        <state line="104" column="40" selection-start="3275" selection-end="3275" vertical-scroll-proportion="0.87627363">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/relationships_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="65" selection-start="446" selection-end="446" vertical-scroll-proportion="0.7">
+        <state line="13" column="102" selection-start="415" selection-end="415" vertical-scroll-proportion="0.30068028">
           <folding />
         </state>
       </provider>

@@ -8,6 +8,14 @@ class RelationshipsController < ApplicationController
 
   end
 
+  def create
+    other_leader = User.find(params[:leader_id])
+    Relationship.create(leader_id: params[:leader_id],
+    follower: current_user) unless current_user.follows?(other_leader) || current_user == other_leader
+    #require 'pry'; binding.pry
+    redirect_to people_path
+  end
+
   def destroy
     #either you create a template och redirect to other temple
 
@@ -18,3 +26,5 @@ class RelationshipsController < ApplicationController
 
   end
 end
+
+
