@@ -28,4 +28,11 @@
     following_relationships.map(&:leader).include?(other_obj)
 
   end
+
+  # we could use this method below, instead of unless current_user == @user || current_user.follows?(@user)
+  #that u will find under user.rb || show.html.haml (user)
+
+  def can_follow?(another_user)
+    !(self.follows?(another_user) || self == another_user)
+  end
 end
