@@ -9,12 +9,8 @@ def sign_in(a_user =  nil)
   fill_in 'Email address', with: user.email
   fill_in 'Password', with: user.password
   click_button 'Sign in'
+end
 
- #skldfjsdlkfsldkfsdlkfjsdlk
-
-
-#ölakdföaslkfdaösldkfaösldfkasöldfkaöä
-
-
-  #sdlfklskdjflsdkjflksdjflksdjflksdjflsdk
+def click_video_on_home_page(video)
+  find("a[href='/videos/#{video.id}']").click
 end

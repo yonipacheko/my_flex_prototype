@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75b13246-48a4-4a09-8fb1-f6a3c25604ea" name="Default" comment="" />
+    <list default="true" id="75b13246-48a4-4a09-8fb1-f6a3c25604ea" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20131121050204_create_relationships.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/relationships/index.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/relationship.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/relationships_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/controllers/relationships_controller_spec.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/Fabricators/relationships_fabricator.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/show.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/features/user_following_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_header.html.haml" afterPath="$PROJECT_DIR$/app/views/shared/_header.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/support/macro.rb" afterPath="$PROJECT_DIR$/spec/support/macro.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/review.rb" afterPath="$PROJECT_DIR$/app/models/review.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/support/shared_examples.rb" afterPath="$PROJECT_DIR$/spec/support/shared_examples.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/videos/show.html.haml" afterPath="$PROJECT_DIR$/app/views/videos/show.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/ui/user.html.haml" afterPath="$PROJECT_DIR$/app/views/ui/user.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/user.sass" afterPath="$PROJECT_DIR$/app/assets/stylesheets/user.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="myApp.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="75b13246-48a4-4a09-8fb1-f6a3c25604ea" time="1384964669818" ignored="false" />
@@ -100,7 +123,7 @@
           <file leaf-file-name="shared_examples.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/support/shared_examples.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="3" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
+                <state line="8" column="3" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -118,10 +141,8 @@
           <file leaf-file-name="user_spec.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="46" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <marker date="1385125341000" expanded="true" signature="224:277" placeholder="{ ... }" />
-                  </folding>
+                <state line="30" column="46" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.0">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -138,7 +159,7 @@
           <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/models/user.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="58" selection-start="398" selection-end="398" vertical-scroll-proportion="0.32872927">
+                <state line="32" column="58" selection-start="989" selection-end="989" vertical-scroll-proportion="0.75527424">
                   <folding />
                 </state>
               </provider>
@@ -164,15 +185,8 @@
                   <provider selected="true" editor-type-id="text-editor">
                     <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="23.538462">
                       <folding>
-                        <marker date="1385125341000" expanded="true" signature="409:1649" placeholder=".wrapper" />
-                        <marker date="1385125341000" expanded="true" signature="680:1649" placeholder=".row" />
-                        <marker date="1385125341000" expanded="true" signature="820:1649" placeholder=".span10.offset1" />
-                        <marker date="1385125341000" expanded="true" signature="1394:1649" placeholder="%li.row" />
-                        <marker date="1385125341000" expanded="true" signature="1432:1591" placeholder=".span2" />
-                        <marker date="1385125341000" expanded="true" signature="1460:1490" placeholder="%span Rating: #{review.rating}" />
-                        <marker date="1385125341000" expanded="true" signature="1480:1591" placeholder="%p" />
-                        <marker date="1385125341000" expanded="true" signature="1503:1505" placeholder="by" />
-                        <marker date="1385125341000" expanded="true" signature="1547:1591" placeholder="= link_to review.user.full_name, review.user" />
+                        <marker date="1385125742000" expanded="true" signature="1460:1490" placeholder="%span Rating: #{review.rating}" />
+                        <marker date="1385125742000" expanded="true" signature="1503:1505" placeholder="by" />
                       </folding>
                     </state>
                   </provider>
@@ -181,7 +195,7 @@
               <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/config/routes.rb">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="7" column="40" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
+                    <state line="13" column="40" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
                       <folding />
                     </state>
                   </provider>
@@ -190,7 +204,7 @@
               <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                    <state line="2" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
                       <folding />
                     </state>
                   </provider>
@@ -221,7 +235,7 @@
               <file leaf-file-name="macro.rb" pinned="false" current="true" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/spec/support/macro.rb">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="19" column="0" selection-start="400" selection-end="400" vertical-scroll-proportion="0.7110482">
+                    <state line="15" column="0" selection-start="371" selection-end="371" vertical-scroll-proportion="0.7110482">
                       <folding />
                     </state>
                   </provider>
@@ -288,7 +302,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
+    <option name="STATE" value="1" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -928,7 +942,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/support/shared_examples.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="3" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
+        <state line="8" column="3" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -942,10 +956,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="46" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1385125341000" expanded="true" signature="224:277" placeholder="{ ... }" />
-          </folding>
+        <state line="30" column="46" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -953,29 +965,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="23.538462">
           <folding>
-            <marker date="1385125341000" expanded="true" signature="409:1649" placeholder=".wrapper" />
-            <marker date="1385125341000" expanded="true" signature="680:1649" placeholder=".row" />
-            <marker date="1385125341000" expanded="true" signature="820:1649" placeholder=".span10.offset1" />
-            <marker date="1385125341000" expanded="true" signature="1394:1649" placeholder="%li.row" />
-            <marker date="1385125341000" expanded="true" signature="1432:1591" placeholder=".span2" />
-            <marker date="1385125341000" expanded="true" signature="1460:1490" placeholder="%span Rating: #{review.rating}" />
-            <marker date="1385125341000" expanded="true" signature="1480:1591" placeholder="%p" />
-            <marker date="1385125341000" expanded="true" signature="1503:1505" placeholder="by" />
-            <marker date="1385125341000" expanded="true" signature="1547:1591" placeholder="= link_to review.user.full_name, review.user" />
+            <marker date="1385125742000" expanded="true" signature="1460:1490" placeholder="%span Rating: #{review.rating}" />
+            <marker date="1385125742000" expanded="true" signature="1503:1505" placeholder="by" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="40" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
+        <state line="13" column="40" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="2" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -996,14 +1001,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="58" selection-start="398" selection-end="398" vertical-scroll-proportion="0.32872927">
+        <state line="32" column="58" selection-start="989" selection-end="989" vertical-scroll-proportion="0.75527424">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/support/macro.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="400" selection-end="400" vertical-scroll-proportion="0.7110482">
+        <state line="15" column="0" selection-start="371" selection-end="371" vertical-scroll-proportion="0.7110482">
           <folding />
         </state>
       </provider>

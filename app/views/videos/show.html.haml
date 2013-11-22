@@ -70,8 +70,10 @@
           %article.review
             %li.row
               .span2
-                %span Rating: review.rating
-                %p by <a href="">#{review.user.full_name}</a>
+                %span Rating: #{review.rating}
+                %p
+                  by
+                  = link_to review.user.full_name, review.user
               .span8
                 %p= review.content
 
