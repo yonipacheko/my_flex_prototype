@@ -18,11 +18,12 @@ group :development do
   gem 'sqlite3'
   gem 'pry'
   gem 'pry-nav'
-
+  gem 'letter_opener'
 end
 
 group :development, :test do
   gem "rspec-rails", "~> 2.14.0"
+
 end
 
 group :test do
