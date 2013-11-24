@@ -51,7 +51,7 @@ describe UsersController do
         expect(ActionMailer::Base.deliveries.last.body).to include('kik')
       end
       it 'doesnt send out email with invalid  inputs' do
-        post :create, user: {email: 'kik@mah.se'}
+        post :create, user: {email: 'kik@mah.se' }
         expect(ActionMailer::Base.deliveries).to be_empty
       end
 
