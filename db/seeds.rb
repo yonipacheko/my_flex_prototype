@@ -27,6 +27,9 @@ Video.create(title: "The Big Bang Theory", description: "The intelectually gifte
 Video.create(title: "The Office", description: "Mockumentary about a paper sales office in a small town.", thumb_url: '/tmp/monk.jpg', large_url: '/tmp/monk_large.jpg')
 
 fer = User.create( full_name: 'Fer hero', password: 'fer', email: 'fer@fer.com')
+ly = User.create( full_name: 'ly', password: 'fer', email: 'ly@mah.com')
+ix = User.create( full_name: 'ix', password: 'fer', email: 'ix@mah.com')
+
 Review.create(user: fer, video: monk, rating: 3, content: 'about something cool' )
 Review.create(user: fer, video: monk, rating: 3, content: 'about spectacular cool' )
 
