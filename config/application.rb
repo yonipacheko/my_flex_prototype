@@ -23,7 +23,7 @@ module Myflix
       g.orm :active_record
       g.template_engine :haml
     end
-    config.assets.initialize_on_precompile = false
+   # config.assets.initialize_on_precompile = false
 
   end
 end
