@@ -1,4 +1,4 @@
-require 'pry'
+#require 'pry'
 class ReviewsController < ApplicationController
 
   before_filter :require_user

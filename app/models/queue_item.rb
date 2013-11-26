@@ -1,4 +1,4 @@
-require 'pry'
+#require 'pry'
 
 class QueueItem < ActiveRecord::Base
   belongs_to :user
