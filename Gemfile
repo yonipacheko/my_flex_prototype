@@ -19,10 +19,12 @@ group :development do
   gem 'pry'
   gem 'pry-nav'
   gem 'letter_opener'
+
 end
 
 group :development, :test do
   gem "rspec-rails", "~> 2.14.0"
+  gem 'capybara-email'
 
 end
 
@@ -32,7 +34,7 @@ group :test do
   gem 'faker'
   gem 'capybara'
   gem 'launchy'
-  gem 'capybara-email'
+
 
 end
 group :production do

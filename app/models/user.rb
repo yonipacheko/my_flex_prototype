@@ -13,6 +13,7 @@
   has_many :following_relationships, class_name: 'Relationship', foreign_key: :follower_id
   has_many :leading_relationships, class_name: 'Relationship', foreign_key: :leader_id
 
+  #has_many :invitations
   before_create :generate_token #be careful with this method, it generates the token way before u think!
 
 
@@ -36,7 +37,7 @@
   #that u will find under user.rb || show.html.haml (user)
 
   def can_follow?(another_user)
-    !(self.follows?(another_user) || self == another_user)
+    !( self.follows?(another_user) || self == another_user )
   end
 
 

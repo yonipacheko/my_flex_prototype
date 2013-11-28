@@ -8,6 +8,7 @@ feature 'User resets password' do
     visit sign_in_path
     click_link 'Forgot Password?'
     fill_in 'Email address', with: kitty.email
+   #require 'pry'; binding.pry
     click_button 'Send Email'
     #letter that the user gets
     open_email(kitty.email)
@@ -15,14 +16,14 @@ feature 'User resets password' do
     #second form
 
     fill_in 'New Password', with: 'new_password'
-    click_button 'Reset password'
+    click_button 'Reset Password'
 
     #sign_in_page again
 
     fill_in 'Email address', with: kitty.email
     fill_in 'Password', with: 'new_password'
     click_button "Sign in"
-    expect(page).to have_content('Welcome, #{kitty.full_name}')
+    expect(page).to have_content("Welcome, #{kitty.full_name}")
 
 
   end

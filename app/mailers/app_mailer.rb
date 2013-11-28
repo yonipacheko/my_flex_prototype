@@ -8,4 +8,11 @@ class App_Mailer < ActionMailer::Base
     @user = user #we do this to wire up the connection with forgot_passwords controller
     mail to: user.email, from: 'info@myflix.com', subject: 'Please reset yr password!'
   end
+
+  def send_invitation_email(invitation)
+    @invitation = invitation
+    mail to: invitation.recipient_email, from: 'info@myflix.com', subject: 'Invitation to join my Myflix'
+
+
+  end
 end

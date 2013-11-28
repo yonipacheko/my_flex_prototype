@@ -1,0 +1,9 @@
+!!! 5
+%html(lang="en-US")
+  %body
+    %p You are invited by #{@invitation.inviter.full_name} to join
+    Myflix!
+    = #we need 2 change: password_reset_path to password_reset_url cuz u get this inside an email
+    %p= @invitation.message
+    %p= link_to 'Accept this invitation', '#'
+
