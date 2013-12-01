@@ -3,6 +3,9 @@ require 'pry'
 
 
 describe UsersController do
+
+  after { ActionMailer::Base.deliveries.clear }
+
   describe 'GET new' do
     it 'sets @user'  do
       get :new
@@ -69,10 +72,19 @@ describe UsersController do
       kitty = Fabricate(:user)
       get :show, id: kitty.id
       expect(assigns(:user)).to eq(kitty)
-
-
     end
 
   end
 
+  describe 'GET new_with_invitation_token' do
+    it 'sets @user with recipients email' do
+      invitation = Fabricate(:invitation)
+      get :new_invitation_token, token: invitation.token
+      expect(response).to render_template :new
+    end
+    it 'redirects to expired token page for invalid tokens'
+
+  end
+
 end
+

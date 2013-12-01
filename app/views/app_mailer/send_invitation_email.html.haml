@@ -5,5 +5,6 @@
     Myflix!
     = #we need 2 change: password_reset_path to password_reset_url cuz u get this inside an email
     %p= @invitation.message
-    %p= link_to 'Accept this invitation', '#'
+    - #this routes looks actually like this: /register/:token(.:format)
+    %p= link_to 'Accept this invitation', register_with_token_url(@invitation.generated_token)
 

@@ -23,5 +23,9 @@ class UsersController <ApplicationController
   def  user_params
     params.require(:user).permit!
   end
+
+  def new_with_invitation_token
+    render :new
+  end
 end
 
