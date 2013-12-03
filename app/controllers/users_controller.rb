@@ -43,6 +43,8 @@ class UsersController <ApplicationController
   def handle_invitation
     if params[:invitation_token].present?
       invitation = Invitation.where(token: params[:invitation_token]).first
+      #require 'pry'; binding.pry
+
       @user.follow(invitation.inviter)
       invitation.inviter.follow(@user)
       #killing the token

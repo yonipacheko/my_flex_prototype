@@ -46,7 +46,6 @@ describe UsersController do
       kitty = Fabricate(:user)
       invitation = Fabricate(:invitation, inviter: kitty, recipient_email: 'ko@ko.com')
       post :create, user: {email: 'ly@ko.com', password: 'password', full_name: 'lykke li'}, invitation_token: invitation.token
-      lykke = User.where(email: 'ly@ko.com').first
       expect(Invitation.first.token).to be_nil
 
       end
