@@ -7,6 +7,7 @@ class Invitation < ActiveRecord::Base
 
   def generated_token
     # a class variable: self.token
-    token = SecureRandom.urlsafe_base64
+    #accesing the col in the DB
+    self.token = SecureRandom.urlsafe_base64
   end
 end

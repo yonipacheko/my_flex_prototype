@@ -1,6 +1,6 @@
 class PasswordResetsController < ApplicationController
   def show
-    user = user.where(token: params[:id]).first # the result of where-method is an array that's why we use first
+    user = User.where(token: params[:id]).first # the result of where-method is an array that's why we use first
     if user
       @token = user.token
     else
@@ -10,10 +10,10 @@ class PasswordResetsController < ApplicationController
   end
 
   def create
-    user = user.where(token: params[:token]).first
+    user = User.where(token: params[:token]).first
     if user
       user.password = params[:password]
-      user.generate_token
+      user.generated_token
       user.save
       flash[:success] = 'yr password has been changed, please sign in.'
 

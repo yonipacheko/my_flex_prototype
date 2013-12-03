@@ -44,4 +44,19 @@ describe User do
       expect(kitty.follows?(joan)).to be_false
     end
   end
+
+  describe '#followe' do
+    it 'follows another user' do
+      kitty = Fabricate(:user)
+      tekla = Fabricate(:user)
+      kitty.follow(tekla)
+      expect(kitty.follows?(tekla)).to be_true
+    end
+    it 'doesnt follow by itself' do
+      tekla = Fabricate(:user)
+      #tekla.follow(tekla)
+      expect(tekla.follows?(tekla)).to be_false
+
+    end
+  end
 end

@@ -14,7 +14,7 @@
   has_many :leading_relationships, class_name: 'Relationship', foreign_key: :leader_id
 
   #has_many :invitations
-  before_create :generate_token #be careful with this method, it generates the token way before u think!
+  before_create :generated_token #be careful with this method, it generates the token way before u think!
 
 
   def normalize_queue_items_positions
@@ -40,9 +40,13 @@
     !( self.follows?(another_user) || self == another_user )
   end
 
+  def follow(another_user)
+    #using this method can_follow to check the obj itself
+    following_relationships.create(leader: another_user) if can_follow?(another_user)
+  end
 
 
-  def generate_token
+  def generated_token
     self.token = SecureRandom.urlsafe_base64
   end
 end

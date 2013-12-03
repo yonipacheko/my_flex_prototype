@@ -6,5 +6,6 @@
     = #we need 2 change: password_reset_path to password_reset_url cuz u get this inside an email
     %p= @invitation.message
     - #this routes looks actually like this: /register/:token(.:format)
-    %p= link_to 'Accept this invitation', register_with_token_url(@invitation.generated_token)
+    - #and belongs to the action called:  'new_with_invitation_token'
+    %p= link_to 'Accept this invitation', register_with_token_url(@invitation.token)
 
