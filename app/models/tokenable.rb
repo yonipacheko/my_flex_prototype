@@ -5,6 +5,8 @@ module Tokenable
     before_create :generated_token
   end
 
+  private
+
   def generated_token
     self.token = SecureRandom.urlsafe_base64
   end
