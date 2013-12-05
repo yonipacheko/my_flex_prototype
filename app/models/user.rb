@@ -1,4 +1,5 @@
   class User < ActiveRecord::Base
+  include Tokenable  # this a concern taking care of generation of tokens
 
   validates :email, :password, :full_name, presence: true
   validates_uniqueness_of :email
@@ -14,7 +15,6 @@
   has_many :leading_relationships, class_name: 'Relationship', foreign_key: :leader_id
 
   #has_many :invitations
-  before_create :generated_token #be careful with this method, it generates the token way before u think!
 
 
   def normalize_queue_items_positions
@@ -46,7 +46,5 @@
   end
 
 
-  def generated_token
-    self.token = SecureRandom.urlsafe_base64
-  end
+
 end

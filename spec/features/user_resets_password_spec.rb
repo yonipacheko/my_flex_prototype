@@ -1,4 +1,4 @@
-require 'spec_helper'
+  require 'spec_helper'
 
 feature 'User resets password' do
   #We are testing here is the workflow works well and
@@ -25,6 +25,6 @@ feature 'User resets password' do
     click_button "Sign in"
     expect(page).to have_content("Welcome, #{kitty.full_name}")
 
-
+    clear_email
   end
 end
