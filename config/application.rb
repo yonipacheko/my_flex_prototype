@@ -24,5 +24,7 @@ module Myflix
       g.template_engine :haml
     end
    # config.assets.initialize_on_precompile = false
+
+    config.action_mailer.default_url_options = { host: 'secret-sea-6367.heroku.com' }
   end
 end
