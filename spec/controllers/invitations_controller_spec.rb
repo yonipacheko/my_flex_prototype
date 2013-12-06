@@ -55,6 +55,10 @@ describe InvitationsController do
 
     context 'with invalid inputs' do
 
+
+      #cleaning up the ActionMailer::Base
+      after { ActionMailer::Base.deliveries.clear }
+
       it 'renders the :new template' do
         set_current_user
         post :create, invitation: { recipient_email: 'ko@ko.com', message: 'Hej join this site'}

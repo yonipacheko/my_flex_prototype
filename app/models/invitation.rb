@@ -1,13 +1,9 @@
 class Invitation < ActiveRecord::Base
+  include Tokenable  # this a concern taking care of generation of tokens
+
   belongs_to :inviter, class_name: 'User'
 
   validates_presence_of :recipient_name, :recipient_email, :message
 
-  before_create :generated_token
 
-  def generated_token
-    # a class variable: self.token
-    #accesing the col in the DB
-    self.token = SecureRandom.urlsafe_base64
-  end
 end

@@ -2,7 +2,7 @@ module Tokenable
   extend ActiveSupport::Concern
   included do
     #be careful with this method, it generates the token way before u think!
-    before_create :generated_token
+    before_save :generated_token
   end
 
   private

@@ -27,7 +27,6 @@ describe Video do
 
     it "return an obj of one video for an exact match" do
       v1 = Fabricate(:video)
-      v2 = Fabricate(:video)
       expect(Video.search_by_title("#{v1.title}")).to eq([v1])
     end
     it 'return an array of video for a partial match' do
