@@ -11,8 +11,13 @@ class InvitationsController < ApplicationController
     #require 'pry'; binding.pry
     @invitation = Invitation.create(user_params.merge!(inviter_id: current_user.id))
     #checking if we have a value that is validated
-    if @invitation.save
-      App_Mailer.send_invitation_email(@invitation).deliver
+    if @invitation.
+      #We comment this line cuz we are gonna introduce sidekiq
+      #App_Mailer.send_invitation_email(@invitation).deliver
+
+      #now using sidekiq so we label this action as bg-job
+        App_Mailer.delay.send_invitation_email(@invitation)
+
       flash[:success] = "You have succesfully invited #{@invitation.recipient_name}"
       redirect_to new_invitation_path
     else

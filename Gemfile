@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '1.9.3'
 gem 'rails', '4.0.0'
 gem 'haml-rails'
-gem "bootstrap-sass", "~> 2.2.2.0"
+gem 'bootstrap-sass', "~> 2.2.2.0"
 gem 'jquery-rails'
 gem 'turbolinks'
 gem "bcrypt-ruby", "~> 3.0.1"
@@ -20,10 +20,12 @@ group :development do
   gem 'pry'
   gem 'pry-nav'
   gem 'letter_opener'
+  #gem 'redis', '~> 3.0.1'
 
 end
 
 group :development, :test do
+  gem 'sidekiq'
   gem "rspec-rails", "~> 2.14.0"
   gem 'capybara-email'
 

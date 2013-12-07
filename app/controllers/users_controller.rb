@@ -9,7 +9,12 @@ class UsersController <ApplicationController
     @user = User.new(user_params)
     if @user.save
       handle_invitation
-      App_Mailer.send_welcome_email(@user).deliver
+      #We comment this line cuz we are gonna introduce sidekiq
+      #App_Mailer.send_welcome_email(@user).deliver
+
+      #now using sidekiq so we label this action as bg-job
+      App_Mailer.delay.send_welcome_email(@user)
+
       redirect_to sign_in_path
     else
       render :new
