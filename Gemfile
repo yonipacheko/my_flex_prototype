@@ -44,6 +44,8 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
   gem 'unicorn'
+  gem 'sidekiq'
+
 end
 
 gem 'jquery-rails'
