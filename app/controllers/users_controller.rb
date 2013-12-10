@@ -13,7 +13,7 @@ class UsersController <ApplicationController
       #App_Mailer.send_welcome_email(@user).deliver
 
       #now using sidekiq so we label this action as bg-job
-      App_Mailer.delay.send_welcome_email(@user)
+      AppMailer.delay.send_welcome_email(@user)
 
       redirect_to sign_in_path
     else
