@@ -8,6 +8,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem "bcrypt-ruby", "~> 3.0.1"
 gem 'bootstrap_form'
+gem 'sidekiq'
+gem 'unicorn'
 
 group :assets do
   gem 'sass-rails',   '~> 4.0.0'
@@ -25,7 +27,7 @@ group :development do
 end
 
 group :development, :test do
-  gem 'sidekiq'
+
   gem "rspec-rails", "~> 2.14.0"
   gem 'capybara-email'
 
@@ -43,8 +45,7 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
-  gem 'unicorn'
-  gem 'sidekiq'
+
 
 end
 
