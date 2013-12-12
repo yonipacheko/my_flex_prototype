@@ -1,7 +1,11 @@
 def set_current_user(user=nil)
   session[:user_id] = (user || Fabricate(:user).id)
 end
+#we give the option to pass an admin otherwise with fabricate on
+def set_current_admin(admin=nil)
+  session[:user_id] = (admin || Fabricate(:admin).id) #wondering if :user would work instead of :admin
 
+end
 
 def sign_in(a_user =  nil)
   user = a_user || Fabricate(:user)

@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'pry'
 
 describe QueueItem do
   it {should belong_to (:user)}
