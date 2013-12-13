@@ -10,6 +10,8 @@ gem "bcrypt-ruby", "~> 3.0.1"
 gem 'bootstrap_form'
 gem 'sidekiq'
 gem 'unicorn'
+gem 'carrierwave'
+gem 'mini_magick'
 
 group :assets do
   gem 'sass-rails',   '~> 4.0.0'

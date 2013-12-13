@@ -15,23 +15,19 @@ class Admin::VideosController < ApplicationController
       flash[:error] = "You can't add this video. Please check the errors"
       render :new
     end
-
   end
-
-
-  def user_params
-    params.require(:video).permit!
-  end
-
 
   private
 
-  def require_admin
-    if !current_user.admin?
-      flash[:error] = 'You are not autorized to do dat'
-      redirect_to home_path
+    def require_admin
+      if !current_user.admin?
+        flash[:error] = 'You are not autorized to do dat'
+        redirect_to home_path
+      end
     end
-  end
 
+    def user_params
+      params.require(...,:video).permit!
+    end
 
 end
