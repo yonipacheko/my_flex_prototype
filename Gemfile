@@ -12,6 +12,8 @@ gem 'sidekiq'
 gem 'unicorn'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'fog'
+gem 'unf'
 
 group :assets do
   gem 'sass-rails',   '~> 4.0.0'
@@ -25,6 +27,8 @@ group :development do
   gem 'pry-nav'
   gem 'letter_opener'
   #gem 'redis', '~> 3.0.1'
+  gem "better_errors"
+  gem "binding_of_caller"
 
 end
 

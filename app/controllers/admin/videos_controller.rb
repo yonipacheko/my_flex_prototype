@@ -8,6 +8,8 @@ class Admin::VideosController < ApplicationController
 
   def create
     @video = Video.new(user_params)
+    #require 'pry'; binding.pry
+
     if @video.save
       flash[:success] = "You have succesfully added the video #{@video.title}."
       redirect_to new_admin_video_path
@@ -27,7 +29,7 @@ class Admin::VideosController < ApplicationController
     end
 
     def user_params
-      params.require(...,:video).permit!
+      params.require(:video).permit!
     end
 
 end

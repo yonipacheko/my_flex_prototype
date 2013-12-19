@@ -41,12 +41,13 @@
 .wrapper
   .video-container
     .video
-      %img(src="#{@video.large_url}")
+      %img(src="#{@video.large_cover}")
 
     .description
       %h3.lead= @video.title
       %p= @video.description
     .actions
+      %a.btn.btn-primary(href="#{@video.video_url}") Watch Now
       - #obj_path(another_path, more information). It's a way to pass information to the server side
       = link_to "+ My Queue", queue_items_path(video_id: @video.id), method: :post, class: 'btn' unless current_user.queue_video?(@video)
 %section.reviews.container
