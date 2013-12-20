@@ -13,4 +13,5 @@
 
         %fieldset.actions.control-group
           .controls
-            %input(type="submit" value="Sign Up" class="btn")
+            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key=#{ENV['STRIPE_PUBLISHABLE_KEY']} data-image="/square-image.png"
+            data-name="Myflix sign up charge" data-description="$9.99 to sign up the best video service" data-amount="999" data-currency="usd"></script>

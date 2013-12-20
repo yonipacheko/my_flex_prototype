@@ -9,6 +9,13 @@ class UsersController <ApplicationController
     @user = User.new(user_params)
     if @user.save
       handle_invitation
+      Stripe.api_key = ENV['STRIPE_SECRET_KEY']
+      Stripe::Charge.create(
+          :amount => 999,
+          :currency => "usd",
+          :card => params[:stripeToken], # obtained with Stripe.js
+          :description => "Charge for #{@user.email}"
+      )
       #We comment this line cuz we are gonna introduce sidekiq
       #App_Mailer.send_welcome_email(@user).deliver
 
