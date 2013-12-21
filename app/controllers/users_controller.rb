@@ -14,7 +14,7 @@ class UsersController <ApplicationController
           :amount => 999,
           :currency => "usd",
           :card => params[:stripeToken], # obtained with Stripe.js
-          :description => "Charge for #{@user.email}"
+          :description => "Sign up for charge for #{@user.email}"
       )
       #We comment this line cuz we are gonna introduce sidekiq
       #App_Mailer.send_welcome_email(@user).deliver
