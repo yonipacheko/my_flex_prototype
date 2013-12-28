@@ -176,7 +176,7 @@ describe QueueItemsController do
       it 'doesnt not change the queue items' do
 
         post :update_queue, queue_items: [{ id: queue_item1.id, position: 2},{id: queue_item2, position: 1.5}]
-        expect(queue_item1.reload.position).to eq(1)
+        expect(queue_item1.reload.position).to eq(2) #is this good?
       end
 
       it 'sets  the flash error message' do

@@ -7,22 +7,28 @@ class UsersController <ApplicationController
 
   def create
     @user = User.new(user_params)
-    if @user.save
-      handle_invitation
+    if @user.valid?
       Stripe.api_key = ENV['STRIPE_SECRET_KEY']
-      Stripe::Charge.create(
+      charge = StripeWrapper::Charge.create(
           :amount => 999,
           :currency => "usd",
           :card => params[:stripeToken], # obtained with Stripe.js
           :description => "Sign up for charge for #{@user.email}"
       )
+      if charge.successful?
+        @user.save
+        handle_invitation
+
       #We comment this line cuz we are gonna introduce sidekiq
       #App_Mailer.send_welcome_email(@user).deliver
 
       #now using sidekiq so we label this action as bg-job
-      AppMailer.delay.send_welcome_email(@user)
-
-      redirect_to sign_in_path
+        AppMailer.delay.send_welcome_email(@user)
+        redirect_to sign_in_path
+      else
+        flash[:error] = charge.error_message #error_message what's dat?
+        render :new
+      end
     else
       render :new
     end

@@ -14,7 +14,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog'
 gem 'unf'
-gem 'stripe'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'figaro'
 gem 'fivemat'
 gem 'minitest'
@@ -50,6 +50,10 @@ group :test do
   gem 'faker'
   gem 'capybara'
   gem 'launchy'
+  gem 'vcr'
+  gem 'webmock', '1.11.0'
+  gem 'selenium-webdriver'
+  gem 'database_cleaner'
 
 
 end

@@ -87,7 +87,7 @@ describe Admin::VideosController do
         set_current_admin
         category = Fabricate(:category)
         post :create, video: { category_ids: [category.id], description: 'nice'}
-        expect(flash[error]).to be_present
+        expect(flash[:error]).to be_present
 
       end
     end
