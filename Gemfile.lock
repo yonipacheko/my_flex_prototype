@@ -73,6 +73,7 @@ GEM
     figaro (0.7.0)
       bundler (~> 1.0)
       rails (>= 3, < 5)
+    fivemat (1.2.1)
     fog (1.19.0)
       builder
       excon (~> 0.31.0)
@@ -234,12 +235,14 @@ DEPENDENCIES
   fabrication
   faker
   figaro
+  fivemat
   fog
   haml-rails
   jquery-rails
   launchy
   letter_opener
   mini_magick
+  minitest
   pg
   pry
   pry-nav

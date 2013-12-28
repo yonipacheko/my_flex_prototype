@@ -16,6 +16,9 @@ gem 'fog'
 gem 'unf'
 gem 'stripe'
 gem 'figaro'
+gem 'fivemat'
+gem 'minitest'
+
 
 group :assets do
   gem 'sass-rails',   '~> 4.0.0'
