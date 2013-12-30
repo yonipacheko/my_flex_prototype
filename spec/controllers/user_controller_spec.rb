@@ -4,7 +4,9 @@ require 'pry'
 
 describe UsersController do
 
-
+  before do
+    StripeWrapper::Charge.stub(:create)
+  end
   after { ActionMailer::Base.deliveries.clear }
 
   describe 'GET new' do
