@@ -50,6 +50,8 @@ group :test do
   gem 'faker'
   gem 'capybara'
   gem 'launchy'
+  gem 'vcr'
+  gem 'webmock', '1.11.0'
 
 
 end

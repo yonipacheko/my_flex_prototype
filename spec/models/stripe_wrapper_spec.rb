@@ -4,7 +4,7 @@ describe StripeWrapper do
   describe StripeWrapper::Charge do
     #instance method u use the #the_method and for custom-method: .my_method
     describe '.create' do
-      it 'makes a succesful charge' do
+      it 'makes a succesful charge', :vcr do
         Stripe.api_key = ENV['STRIPE_SECRET_KEY']
         token = Stripe::Token.create(
             :card => {

@@ -4,6 +4,7 @@ require 'pry'
 
 describe UsersController do
 
+
   after { ActionMailer::Base.deliveries.clear }
 
   describe 'GET new' do
@@ -13,7 +14,9 @@ describe UsersController do
     end
   end
   describe 'POST create' do
-    context 'with valid input' do
+
+    context 'valid input' do
+
       it 'creates the user' do
         user_obj = Fabricate(:user)
         #binding.pry
