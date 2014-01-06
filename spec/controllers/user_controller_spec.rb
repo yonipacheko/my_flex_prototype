@@ -54,11 +54,31 @@ describe UsersController do
       expect(Invitation.first.token).to be_nil
 
       end
-
-
-
     end
-    context 'with invalid input' do
+    context 'valid personal info and declined card' do
+      it 'renders the new template' do
+        charge = double(:charge, successful?: false)
+        StripeWrapper::Charge.stub(:create).and_return(charge)
+        post :create, user: Fabricate.attributes_for(:user), stripeToken: '1231241'
+        expect(response).to render_template :new
+      end
+      it 'does not create a new user record' do
+        charge = double(:charge, successful?: false)
+        StripeWrapper::Charge.stub(:create).and_return(charge)
+        post :create, user: Fabricate.attributes_for(:user), stripeToken: '1231241'
+        expect(User.count).to eq(0)
+      end
+
+      it 'sets the flash error message' do
+        charge = double(:charge, successful?: false, error_message: 'yr cars si declined')
+        StripeWrapper::Charge.stub(:create).and_return(charge)
+        post :create, user: Fabricate.attributes_for(:user), stripeToken: '1231241'
+        expect(flash[:error]).to be_present
+
+      end
+    end
+
+    context 'invalid personal info' do
       it 'doesnt create the user' do
         post :create, user: { password: 'ad', full_name: 'asd' }
         expect(User.count).to eq(0)
@@ -67,11 +87,11 @@ describe UsersController do
         post :create, user: { password: 'ad', full_name: 'asd' }
        expect(response).to render_template :new
       end
-      it ' set @user' do
+      it 'set @user' do
         post :create, user: { email: 'dsf@sdf.com', password: 'ad', full_name: 'asd' }
-
         expect(assigns(:user)).to be_instance_of(User)
       end
+      it ' doesnt charge the card'
     end
 
     context 'sending emails' do
