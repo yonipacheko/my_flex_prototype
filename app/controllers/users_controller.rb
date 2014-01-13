@@ -24,12 +24,14 @@ class UsersController <ApplicationController
 
       #now using sidekiq so we label this action as bg-job
         AppMailer.delay.send_welcome_email(@user)
+        flash[:success] = 'thanks you for registering with Myflix. Pls sign in now.'
         redirect_to sign_in_path
       else
         flash[:error] = charge.error_message #error_message what's dat?
         render :new
       end
     else
+      flash[:error] = 'Invalid user information. Please check the errors below.'
       render :new
     end
   end
