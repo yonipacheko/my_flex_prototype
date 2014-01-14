@@ -1,3 +1,4 @@
+
 class UsersController <ApplicationController
 
   before_filter :require_user, only: [:show]
@@ -19,10 +20,10 @@ class UsersController <ApplicationController
         @user.save
         handle_invitation
 
-      #We comment this line cuz we are gonna introduce sidekiq
-      #App_Mailer.send_welcome_email(@user).deliver
+        #We comment this line cuz we are gonna introduce sidekiq
+        #App_Mailer.send_welcome_email(@user).deliver
 
-      #now using sidekiq so we label this action as bg-job
+        #now using sidekiq so we label this action as bg-job
         AppMailer.delay.send_welcome_email(@user)
         flash[:success] = 'thanks you for registering with Myflix. Pls sign in now.'
         redirect_to sign_in_path
@@ -72,4 +73,3 @@ class UsersController <ApplicationController
     end
   end
 end
-
