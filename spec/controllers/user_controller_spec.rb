@@ -16,15 +16,6 @@ describe UsersController do
     end
 
     it 'creates an user' do
-<<<<<<< HEAD:spec/controllers/users_controller_spec.rb
-=======
-
-      before do
-        StripeWrapper::Charge.stub(:create)
-      end
-      after { ActionMailer::Base.deliveries.clear }
-
->>>>>>> b9a3f703a49b83d977afd01ec56b42277652d3e7:spec/controllers/user_controller_spec.rb
       user_obj = Fabricate(:user)
       #binding.pry
       post :create, user: { email: user_obj.email, password: user_obj.password, full_name: user_obj.full_name }
