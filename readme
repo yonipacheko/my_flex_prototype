@@ -1,1 +1,61 @@
 Description of Rails concepts found in MyFlix app.
+
+
+**Frontend:**
+
+HTML coded in HAML. We were also taught to be proficient in ERB. However, HAML has been a pleasure to work with because it greatly simplifies and speeds up the frontend coding process.
+
+SASS was used for stylesheets. Similar to HAML, SASS speeds up the frontend process and allows for more time working with Rails for the app functionality.
+
+Twitter Bootstrap was used for prebuilt design. Again, to allow more time on the Rails side of the app.
+Github:
+
+Github flow was used for the entire development of the app. Each major feature was developed on its own branch and reviewed through pull requests before being merged back into master.
+Testing:
+
+TDD and BDD are the methods of coding that we were taught. Very few of the features in this app were coded without a test being written first.
+
+Rspec was used for testing. Specs created include: Model, Controller, Feature, Request, Decorator, and Servive specs. Other gems and helpers that were used in the testing process include: fabricators, capybara, shoulda matchers, vcr, mocks, stubs, test doubles, macros, and shared examples.
+
+With close to 200 individual tests, this is a very thoroughly tested and debugged app that is production ready.
+Rails Application Concepts and Practices
+
+Seeding data
+Search
+Sending emails
+Use random tokens
+Email Service Providers
+Custom form builders
+Custom form builders as gems
+Complex forms
+Self referential associations
+Organize cross cutting functionality with Concerns
+Background jobs
+Resque and Sidekiq
+S3
+Uploading files
+Scheduled jobs
+Skinny controller, fat model
+Structural refactors
+Separating actors
+Securing access
+Wrapping APIs
+Responding to webhooks
+Collect credit card payments
+Checkout
+Payment forms
+Recurring billing
+Handle callback events
+Beyond MVC
+Production Considerations
+
+Config variables stored on Heroku instead of Github to keep secret keys secret.
+Unicorn utilized for background jobs to maintain site speed.
+All sensetive data, like passwords and credit card information, handled in secure manners.
+Workflows
+
+Complex registration that validates both registration data as well as credit card data simultaneously.
+Email generation and invitation sending, providing invitee with unique registration token.
+Credit card management with recurring billing, account lock on declined payments, credit card update process, and subscription cancel process.
+Privliges based on both actor and credit card status.
+Heroku address to view app and login details.
